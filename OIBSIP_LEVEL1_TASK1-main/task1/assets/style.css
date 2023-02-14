@@ -1,0 +1,292 @@
+/* Style */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #494949; 
+    color: wheat ;
+}
+.contanier{
+    max-width: 100%;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 1360px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1px 0px; 
+}
+
+header a{
+    font-family: 'Tapestry', cursive;
+    color:#272727;
+    
+}
+
+.logo {
+    height: 40px;
+    position: relative;
+    left: -80px;
+    top: 5px;
+}
+
+.logo:hover{
+    transform: translateY(-5px);
+    transition: all 1s ease 0s;
+}
+
+.menu{
+    position: relative;
+    top: 0px;
+    left:537px;
+    font-size: 26px;
+}
+li,a{
+    font-weight: 20;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 7px;
+}
+
+nav ul li{
+    display: inline;
+    padding:0px 10px;
+}
+nav ul li a{
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: bisque;
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    position: relative;
+    left: 120px;
+    top:6px;
+    padding: 0px 10px;
+    background-color:  rgb(73, 73, 73);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-size: 200% auto;
+    height: 34px;
+    font-weight: 10px;
+}
+button a{
+    color: #cfcfcf;
+    position:relative;
+    top:0;
+    left:0;
+}
+
+button:hover{
+    background-position: right center;
+    background-color: #272727;
+    backdrop-filter: blur(.10px);
+    transition: all 1s ease 0s;
+}
+button a:hover{
+    color: bisque;
+    transition: all 0.7s ease 0s;
+}
+.SN{
+    position: relative;
+    top:50px;
+    left:780px;
+    border-radius: 10px;
+}
+.SN a{
+    position:relative;
+    top:0;
+    left:0;
+    font-family: 'Bebas Neue', cursive;
+}
+/* WRAPPER */
+
+.wrapper {
+    background: url('./BG.jpg') no-repeat center center / cover;
+    height: 665px;
+    width:100%;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.wrapper:before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to right, #2e0000 0%, rgba(48, 70, 94, 0.301) 51%, #00030ae5 100%);
+    opacity: 10%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -6;
+}
+
+.content {
+    display:flex;
+    padding: 80px 210px;
+    justify-content: space-between;
+    color: rgb(32, 32, 32);
+    
+}
+
+.text p{
+    font-size: 46px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 30px 0;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+    top:50px;
+    left:690px;
+    font-style: italic;
+}
+
+.categories{
+    margin:70px 0;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px 1px;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-3{
+    flex-basis:30%;
+    min-width: 450px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    transition: transform 0.5s;
+    
+}
+
+.col-3 img{
+    width:100%;
+    border-radius: 5px;
+}
+
+.col-3:hover{
+    transform: translateY(-5px);
+    background-color: #8b0000;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.title{
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.title h1{
+    position: relative;
+    left:130px;
+    top:20px;
+    font-style: italic;
+}
+
+
+.about{
+    font-size: 20px;
+    font-family: 'Markazi Text', serif;
+    display: flex;
+    text-align: left;
+    position: relative;
+    top:-80px;
+    font-style: italic;
+    font-family: 'Satisfy', cursive;
+}
+
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    left:-150px;
+    font-family: 'Play', sans-serif;
+    
+}
+
+.social-links{
+    position: relative;
+    padding: 16px;
+    top:-85px;
+    display: flex;
+    text-align: center;
+}
+
+.social-links ul {
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+}
+
+.social-links ul li,a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Play', sans-serif;
+    position: relative;
+    left:110px;
+    top:0px;
+    text-align: justify;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.address a{
+    left:-440px;
+    top:45px;
+    display: flex;
+    text-align: justify;
+}
+
+.contact1 a{
+    left:-440px;
+    top:90px;
+    text-align: justify;
+}
+
+.c{
+    background-color: black;
+    height: 400px;
+}
+
+.social-links a:hover{
+    color:#8b0000;
+    transition: all 1s ease 0s;
+}
+.contact1,.address a:hover{
+    color:#8b0000;
+    transition: all 1s ease 0s;
+}
